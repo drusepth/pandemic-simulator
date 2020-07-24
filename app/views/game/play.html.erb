@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col l3">
+    <h1>City Control Panel</h1>
+
+    <div id="game-stats">
+      <div class="week"></div>
+    </div>
+
+    <h2>Choose an action</h2>
+    <div class="collection" id="weekly-action">
+      <a href="#" class="collection-item" id="next-week-button">Do nothing</a>
+    </div>
+  </div>
+  <div class="col l6">
+    <canvas id="infection-breakdown-graph" width="960" height="200"></canvas>
+    <canvas id="infection-timeline-graph" width="960" height="200"></canvas>
+  </div>
+  <div class="col l3">
+    <div id="city-stats">
+      <h1 class="name"></h1>
+      <div class="population"></div>
+      <div class="area"></div>
+      <div class="density"></div>
+      <div class="density-exposure-rate"></div>
+      <div class="temperature"></div>
+      <div class="tourists"></div>
+    </div>
+
+    <div id="mayor-stats">
+      <h2 class="name"></h2>
+      <div class="approval-rating"></div>
+      <div class="trustworthiness"></div>
+    </div>
+
+    <div id="disease-stats">
+      <h2>The disease</h2>
+      <div class="infection-chance"></div>
+      <div class="fatality-chance"></div>
+      <div class="tourist-infection-chance"></div>
+
+      <h3>Current cases per stage</h3>
+      <div class="incubation"></div>
+      <div class="prodromal"></div>
+      <div class="illness"></div>
+      <div class="convalescence"></div>
+      <div class="recovered"></div>
+      <div class="deaths"></div>
+    </div>
+  </div>
+</div>
