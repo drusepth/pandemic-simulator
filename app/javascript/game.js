@@ -11,5 +11,5 @@ $(document).ready(function () {
 
   setInterval(function () {
     window.game.state.city.processWeek();
-  }, 10000);
+  }, 1000);
 });
