@@ -5,7 +5,6 @@ ruby '2.6.3'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # gem 'sqlite3', '~> 1.4'
-gem 'pg'
 gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
@@ -21,9 +20,16 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 
+group :development, :test do
+  gem 'sqlite3'
+end
